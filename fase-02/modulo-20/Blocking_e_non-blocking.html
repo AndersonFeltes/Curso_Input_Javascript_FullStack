@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocking e non-blocking</title>
+</head>
+<body>
+    <script>
+        //blocking
+        const nums = [1, 4, 10, 20]
+
+        //non-blocking //setInterval // setTimeout // Promises //chamadas de rede
+        setTimeout(() => {
+            console.log('Passou dentro do set Timeout')
+        }, 2000)
+
+        nums.forEach((item) => {
+            console.log('item numero: ', item)
+        })
+    </script>
+</body>
+</html>

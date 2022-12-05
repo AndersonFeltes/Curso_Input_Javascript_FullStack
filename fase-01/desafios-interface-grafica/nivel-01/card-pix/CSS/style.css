@@ -1,0 +1,70 @@
+@import url("http://meyerweb.com/eric/tools/css/reset/");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+html, body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #D6D4E2;
+}
+
+.container:hover svg, .container:hover strong, .container:hover{
+    background-color: #18161F;
+    color:#FFFFFF;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    width: 208px;
+    height: 244px;
+    border-radius: 32px;
+    padding: 32px 24px;
+    background-color: #FFFFFF;
+}
+
+#container-img{
+    width: 48px;
+    height: 48px;
+}
+
+svg{
+    width: 100%;
+    height: 100%;
+    color: #18161F;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 56px;
+}
+
+.texto{
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Space Grotesk';
+    color: #787491;
+}
+
+#valor{
+    display: flex;
+    align-items: center;
+
+    height: 48px;
+}
+
+strong{
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Space Grotesk';
+    color: #18161F;
+}
+

@@ -1,0 +1,13 @@
+#exercícioMapaConversão
+Nome: Anderson 
+Letras: 8
+Nome criptografado: ivlmzawv
+
+a = i
+n = v
+d = l
+e = m
+r = z
+s = a
+o = w
+n = v

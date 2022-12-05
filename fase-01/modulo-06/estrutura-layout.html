@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estrutura de Layout</title>
+
+        <style>
+            html, body{
+                margin: 0;
+                height: 100%;
+            }
+
+            #container{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            #header{
+                background-color: blue;
+                padding: 16px;
+            }
+
+            #main{
+                flex: 1;
+                display: flex;
+                background-color: red;
+            }
+
+            #sidebar{
+                background-color: #00ff37;
+                padding: 16px;
+                width: 85px;
+                height: 100%;
+            }
+
+            #content{
+                flex: 1;
+                background-color: fuchsia;
+                padding: 16px;
+            }
+
+            #footer{
+                background-color: #f3ef06;
+                padding: 16px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div id="container">
+            <header id="header">MENU DO TOPO</header>
+            <main id="main">
+                <aside id="sidebar"> BARRA LATERAL</aside>
+                <section id="content">CONTEUDO</section>
+            </main>
+            <footer id="footer">RODAPE</footer>
+        </div>
+
+    </body>
+
+</html>

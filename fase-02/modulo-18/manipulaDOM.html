@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipula DOM</title>
+</head>
+<body>
+    <div id="app" class="root" z="10"> 
+        Ola HTML
+    </div>
+    <script>
+        const containerRoot = window.document.getElementById('app')
+        const title = window.document.createElement('h1')
+        title.setAttribute('id', 'title')
+        title.innerHTML = 'Ola DOM'
+
+        containerRoot.appendChild(title)
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientacao a Objetos</title>
+</head>
+<body>
+    <script>
+
+        //object-oriented programing (OOP)
+        const person1 = {
+            name: 'Anderson'
+        }
+
+        console.log(person1.name = 'Ander Mateus')
+
+        //metodo funcional
+        const creatPerson = (name) => {
+            return {
+                name: name,
+                getName(){
+                    return name
+                }
+            }
+        }
+
+
+
+        // classe orientada a objetos
+
+        class Person  {
+            name = 'Anderson'
+
+            constructor(name){
+                this.name = name
+            }
+
+            getName(){
+                return this.name
+            }
+
+            setName(name){
+                 this.name = name
+            }
+        }
+
+        const person = new Person('Anderson')
+        // person.setName('Anderson')
+
+        const person2 = new Person('João')
+        // person2.setName('Joao')
+
+         console.log(person.getName())
+         console.log(person2.getName())
+
+        //console.log(person.getName())
+        //person.setName('Anderson Feltes')
+        //console.log(person.getName())
+
+    </script>
+</body>
+</html>

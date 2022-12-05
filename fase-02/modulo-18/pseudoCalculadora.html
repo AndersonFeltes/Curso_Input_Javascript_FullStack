@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Calculadora</title>
+</head>
+<body>
+    <div id="app">
+        <form action="" id="form">
+            <input type="number" name="n1" id="n1"> +
+            <input type="number" name="n2" id="n2">
+            <button id="btn">Calcular</button>
+        </form>
+    </div>
+    <script>
+        const inputN1 = document.getElementById('n1')
+        const inputN2 = document.getElementById('n2')
+        const button = document.getElementById('btn')
+        const appElement = document.getElementById('app')
+
+        const form = document.getElementById('form')
+
+        const resultElement = document.createElement('p')
+        resultElement.innerText = 'Não tem calculo ainda!!'
+
+        appElement.appendChild(resultElement)
+
+        form.onsubmit = (event) => {
+            event.preventDefault()
+        }
+
+        button.onclick = function(){
+            const n1Value = parseInt(inputN1.value)
+            const n2Value = Number(inputN2.value)
+
+            const result = n1Value + n2Value
+            resultElement.innerText = `${n1Value} + ${n2Value} = ${result}`
+        }
+
+        const ev1 = () => console.log(1)
+        const ev2 = () => console.log(2)
+
+        button.addEventListener('click', ev1)
+        button.addEventListener('click', ev2)
+
+        button.removeEventListener('click', ev2)
+
+        inputN1.onblur = (event) => {
+            console.log(inputN1.value)
+            console.log(event.target.value)
+        }
+    </script>
+</body>
+</html>

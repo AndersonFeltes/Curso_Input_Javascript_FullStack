@@ -1,0 +1,15 @@
+git config --global user.name "Anderson Feltes" // configura o usuario global da maquina
+git config --global user.email "email@gmail.com"  // configura o email global na maquina de usuario
+git config --global color.ui auto // configura as cores no terminal para o git
+git config --global core.editor code //configura o git para abrir o vsCode sempre que precisar abrir um arquivo 
+git commit -m "Mensagem para o commit" // passa uma mensagem junto com o commit
+git status // mostra o status dos commits na pasta
+git log --graph // mostra a arvore de commits ja feitos
+git add . // adiciona todas as alterações feitas 
+git branch develop // cria a branch para desenvolvimento 
+git branch -D develop // deleta a branch com o nome designado no comando
+git checkout develop // altera a brando onde estamos, vai para o nome passado no comando
+git remote add origin URL DO GIT HUB // adiciona o projeto para o repositorio remoto
+git remote show // mostra os repositorios remotos existentes
+git push origin master // envia os arquivos para a branch master do repositorio remoto
+
