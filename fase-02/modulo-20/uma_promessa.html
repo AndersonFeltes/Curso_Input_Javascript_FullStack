@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Promessa</title>
+    <script>
+        // blocink - sincronas (sync)
+        // non-blocking - assincronas (async)
+
+        //quando a pagina carregar fara a execução da função
+        //  window.onload = () => {
+        //     const element = window.document.querySelector("#app")
+        //     console.log(element)
+        //  }
+
+        const promise = new Promise((resolve, reject) => {
+            const sucesso = true
+            // const sucesso = false
+            if(sucesso){
+                resolve({name:"Anderson"})
+            }
+            else{
+                reject("Algo deu errado!!!")
+            }
+        })
+
+        promise.then((result) => {
+            console.log("SUCESSO: ",result)
+        }).catch((result) => {
+            console.log("ERRO: ",result)
+        })
+
+    </script>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
