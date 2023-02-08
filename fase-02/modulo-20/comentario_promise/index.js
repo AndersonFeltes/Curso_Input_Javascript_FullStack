@@ -52,7 +52,7 @@ async function main(){
 
     const user01 = posts.filter(post => post.userId === 1)
     // console.log(user01)
-
+    
     return user01
 }
 
