@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 72px 0 0 72px;
+    background-color: #F5F4F6;
+
+}
+
+#principal{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.titulo{
+    width: 554px;
+    height: 54px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color:#18161F;
+}
+
+.pai{
+    display: flex;
+    justify-content: space-between;
+
+    height: 432px;
+    width: 1024px;
+}
+
+.Card{
+    width: 320px;
+
+    background-color: #ffffff;
+
+    border: 2px solid #D6D4E2;
+    border-radius: 32px;
+}
+
+.imagemTopo{
+    height: 200px;
+}
+
+.subtitulo{
+    width: 256px;
+    height: 80px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+
+    margin: 24px 0 0 24px;
+}
+
+.divPerfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+
+    width: 254px;
+    height: 32px;
+
+    margin: 24px 0 0 24px
+}
+
+.fotoPerfil{
+    width: 32px;
+    height: 32px;
+}
+
+.textoPerfil{
+    width: 206px;
+    height: 24px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:  #787490;
+}
+
+strong{
+    color: #18161F;
+}
+
+.paiIcons{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 16px 24px 0 24px;
+}
+
+.divIcons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60px;
+    height: 32px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:  #787490;
+}
